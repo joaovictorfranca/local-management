@@ -9,6 +9,6 @@ import java.util.List;
 public interface LocalRepository extends JpaRepository<Local, Long> {
 
     @Query(value = "select l from Local l order by l.dataRegistro desc")
-    List<Local> findAllOrdenado();
+    List<Local> findAllOrdenado(); // Método personalizado para buscar todos os locais ordenados pela data de registro descressente
 
 }

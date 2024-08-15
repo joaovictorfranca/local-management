@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "d008d345-8c83-4801-8dd7-824dff800a95",
+		"name": "LocalManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24894714"
+	},
+	"item": [
+		{
+			"name": "Listar Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/local",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"nn\",\r\n    \"bairro\": \"bb\",\r\n    \"cidade\": \"cc\",\r\n    \"estado\": \"ee\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/local",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/local/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Local",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Casa\",\r\n    \"bairro\": \"Itaoca\",\r\n    \"cidade\": \"Fortaleza\",\r\n    \"estado\": \"Ceará\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/local/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Local",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/local/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
